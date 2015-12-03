@@ -1,0 +1,668 @@
+/*--------------------------------- Generalise --------------------------*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    overflow-x: auto;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+    background-color: #e8e8e8;
+    background-image: url("./rsc/bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-size: 0.8em;
+    display: block;
+}
+
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+div {
+    display: block;
+}
+
+.centre {
+    text-align: center;
+}
+
+h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+h1, h2 {
+    margin:0;
+    font-weight: normal;
+}
+
+
+a {
+    background: transparent;
+    text-decoration: none;
+}
+
+.structure {
+    height: auto;
+    margin: 0 auto;
+    padding: 0px 15px;
+    overflow: hidden;
+    max-width: 1170px;
+    min-width: 1000px;
+    /* width: 1170px; */
+}
+
+.white {
+    background: white;
+}
+
+.black {
+    background: #353535;
+}
+
+.background_color_black {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.fixed {
+    position: fixed !important;
+    top: 0;
+    z-index: 998 !important;
+    width: 100%;
+
+}
+
+::selection {
+    /* quand on surligne*/
+    /*  background-color: yellow;
+      color: black;
+  */
+}
+
+
+.padding_part_contener {
+    overflow: hidden;
+    padding: 15px;
+}
+
+.padding_part_contener.no_padding_left_right {
+    overflow: hidden;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.right_part_contener {
+    float: right;
+    width: 180px;
+}
+
+/* ----------------------------------------------EXTRAS-------------------------------------*/
+
+.background_color_button_blue:active {
+    /* background-color: rgba(2, 165, 193, 0.6); */
+}
+.background_color_button_blue:hover {
+    background-color: rgba(2, 165, 193, 0.8);
+}
+
+.background_color_button_red {
+     background-color: rgba(255, 43, 39, 0.8); 
+}
+.background_color_button_red:hover {
+    background-color: rgba(255, 43, 39, 0.6);
+}
+	
+	
+#no_deal {
+    overflow: hidden;
+    background-image: url(./rsc/icon_all_error_grey.png);
+    background-position: left 6px center;
+    background-repeat: no-repeat;
+    border: 1px solid #F0C36D;
+    background-color: #F9EDBE;
+}
+
+#delete {
+    overflow: hidden;
+    background-image: url(./rsc/icon_check_grey.png);
+    background-position: left 6px center;
+    background-repeat: no-repeat;
+    border: 1px solid #F0C36D;
+    background-color: #F9EDBE;
+}
+
+#delete p {
+    line-height: 30px;
+    overflow: hidden;
+    margin-left: 32px;
+}
+
+#no_deal p {
+    line-height: 30px;
+    overflow: hidden;
+    margin-left: 32px;
+}
+
+.text_color_777777 {
+    color: #777777 !important;
+}
+
+.text_color_333333 {
+    color: #333333 !important;
+}
+
+.text_color_b4b4b4 {
+    color: #b4b4b4 !important;
+}
+
+.text_color_red {
+    color: rgba(244, 67, 67, 1) !important;
+}
+
+
+/*--------------------------------- Header --------------------------*/
+
+#menu {
+    width: 100%;
+    float: left;
+    height: auto;
+    background: #353535;
+    /*border-bottom: 1px solid #d9d9d9;
+    /* background-color: red; */
+}
+
+#menu nav {
+    width: auto;
+    height: auto;
+}
+
+a.logo {
+    margin: 0 10px 0 0;
+    float: left;
+    padding: 0;
+    height: 70px;
+    width: 250px;
+    background-image: url(rsc/logo_home.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+a.logo:hover {
+    background: rgba(0, 0, 0, 1) url(rsc/logo_home.png) no-repeat center;
+
+}
+
+nav {
+    /* float: left; */
+    overflow: hidden;
+    padding: 20px 0px;
+    /* border: 1px solid red; */
+    margin: 0;
+}
+
+nav a {
+    float: left;
+    line-height: 30px;
+    color: #c3c3c3;
+    padding: 0px 8px;
+    margin-right: 45px;
+    /* border: 1px solid red; */
+}
+
+nav a.active {
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+}
+
+nav a:hover {
+    color: #c3c3c3;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+/*----------------------------------------------Content Area-------------------------------------*/
+
+#body {
+    float: left;
+    height: auto;
+    margin-top: 110px;
+    width: 100%;
+}
+
+aside {
+    /* background: orange; */
+    width: 280px;
+    float: right;
+}
+
+section {
+    /* background-color: #ffffff; */
+    margin-right: 290px;
+    padding: 0px;
+    min-height: 1000px;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+article {
+    padding: 20px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/*----------------------------------------------Right Column-------------------------------------*/
+
+#rightbar_content {
+    margin-left: 20px;
+    float: right;
+    width: 280px;
+
+}
+
+#body .add_bid_button, #body .signup_button {
+    float: left;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(130, 118, 185, 1);
+}
+
+#body .add_bid_button div {
+    float: left;
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./rsc/add_icon.png");
+}
+
+#body .add_bid_button p, #body .signup_button {
+    overflow: hidden;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#body .add_bid_button:hover, #body .signup_button:hover {
+    background-color: rgba(130, 118, 185, 0.8);
+}
+
+#body .add_bid_button:active, #body .signup_button:active {
+    background-color: rgba(130, 118, 185, 0.6);
+}
+
+.bloc_rightbar {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+/*----------------------------------------------Footer-------------------------------------*/
+
+footer {
+	position: fixed !important;
+    bottom: 0;
+    z-index: 998 !important;
+    width: 100%;
+}
+
+#footer_white_background {
+    width: 100%;
+    float: left;
+    height: auto;
+    background-color: white;
+    margin-top: 30px;
+    /* border-top: 1px solid #d9d9d9; */
+}
+
+#footer_white_background .color_top_footer {
+    width: 100%;
+    float: left;
+    height: 4px;
+}
+
+#footer_white_background .color_top_footer div {
+    width: 12.5%;
+    float: left;
+    height: 100%;
+}
+
+#bottom_footer {
+    width: 100%;
+    float: left;
+    height: auto;
+    background-color: #ffffff;
+}
+
+#bottom_footer_white {
+    float: left;
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    border-top: 1px solid #d9d9d9;
+}
+
+#featured_slide {
+
+    display: block;
+    width: 960px;
+    height: 380px;
+    margin: 0 auto;
+    padding: 50px;
+    font-size: 12px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#fl_left {
+    float: left;
+}
+
+#fl_right {
+    float: right;
+}
+
+/*-------------------------------------------------------Forms----------------------------------------------------------*/
+
+label {
+
+    display: block;
+    width: 100px;
+    float: left;
+
+}
+
+/*-------------------------------------------------------Bidlist----------------------------------------------------------*/
+
+article .contener_liste_deal_index {
+    float: left;
+    width: 100%;
+}
+
+.contener_liste_deal_index .price_div_deal_index {
+    width: 110px;
+    float: right;
+    margin-left: 15px;
+}
+
+.contener_liste_deal_index .price_div_deal_index a.voir_le_deal {
+    width: 100%;
+    float: left;
+    line-height: 35px;
+    display: block;
+    text-align: center;
+    font-size: 1.3em;
+    color: white;
+}
+
+.background_color_button_blue {
+    background-color: rgba(2, 165, 193, 1);
+}
+
+.contener_liste_deal_index .image_div_deal_index {
+    /* background: orange; */
+    width: auto;
+    float: left;
+    margin-right: 20px;
+    width: 100px;
+    height: auto;
+}
+
+.contener_liste_deal_index .content_div_deal_index {
+    /* margin-right: 300px; */
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.contener_liste_deal_index .image_contener div.price_div {
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+}
+
+.contener_liste_deal_index .image_contener div.price_div div.price_border {
+    border: 1px solid #d9d9d9;
+    line-height: 22px;
+    padding: 2px 0px;
+}
+
+.contener_liste_deal_index .image_contener div.price_div div.price_border p.price {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.image_contener {
+    float: left;
+    width: 100%;
+}
+
+.image_contener .div_logo_image_absolute {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    /* background: blue; */
+}
+
+.contener_liste_deal_index .content_div_deal_index .title a {
+    font-size: 1.2em;
+    color: #333333;
+    font-weight: bold;
+    line-height: 20px;
+    display: inline-block;
+}
+
+.contener_liste_deal_index .image_contener div.price_div div.price_border p, .contener_liste_deal_index .image_contener div.price_div p {
+    text-align: center;
+}
+
+.contener_liste_deal_index .content_div_deal_index .description {
+    min-height: 65px;
+    word-wrap: break-word;
+}
+
+.contener_liste_deal_index .content_div_deal_index .title, .contener_liste_deal_index .content_div_deal_index .description, .contener_liste_deal_index .content_div_deal_index .option {
+    overflow: hidden;
+}
+
+.contener_liste_deal_index .content_div_deal_index .description p {
+    font-size: 1em;
+    margin-top: 15px;
+}
+
+.contener_liste_deal_index .content_div_deal_index .option {
+    margin-top: 10px;
+}
+
+/*-------------------------------------------------------Pagination----------------------------------------------------------*/
+
+.body_pagination {
+    float: left;
+    padding: 15px 0px;
+    width: 100%;
+    /* border-top: 1px solid #DFDFDF; */
+    background: white;
+    height: 32px;
+}
+
+.body_pagination a {
+    padding: 0px 11px;
+    line-height: 30px;
+    border: 1px solid #d9d9d9;
+    display: inline-block;
+    background-color: rgba(242, 242, 242, 1);
+    color: #777777;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.body_pagination .left_part {
+    float: left;
+    margin: 0px 15px;
+    height: 32px;
+}
+
+.body_pagination a.precedent {
+    background-image: url(./rsc/icon_pagination_previous.png);
+    background-position: 11px;
+    background-repeat: no-repeat;
+}
+
+.body_pagination a.precedent span {
+    margin-left: 20px;
+}
+
+.body_pagination .right_part{
+    float: right;
+    margin: 0px 15px;
+    height: 32px;
+}
+
+.body_pagination a.suivant {
+    background-image: url(./rsc/icon_pagination_next.png);
+    background-position: right 11px center !important;
+    background-repeat: no-repeat;
+}
+
+.body_pagination a.suivant span {
+    margin-right: 20px;
+}
+
+
+
+
+.body_pagination .center_part {
+    overflow: hidden;
+    text-align: center;
+}
+
+.body_pagination a.opacity_not_clickable{
+    opacity: 0.5;
+    cursor: default !important;
+}
+
+/* ----------------------------------------------BID-------------------------------------*/
+
+#title_contener {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #d9d9d9;
+    background: white;
+}
+
+
+#description_contener {
+    float: left;
+    width: 100%;
+    /* border-bottom: 1px solid #d9d9d9; */
+    margin-top: 15px;
+}
+
+#title_contener h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333333;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+.right_part_contener {
+    float: right;
+    width: 180px;
+}
+
+.right_part_contener a.encherir {
+    overflow: hidden;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0px 28px 0px 0px;
+    margin: 3px 0px;
+    line-height: 45px;
+    font-size: 1.4em;
+    background-position: right 15px top 12px;
+    background-repeat: no-repeat;
+    background-image: url(./rsc/shoppingcart_icon.png);
+}
+
+.right_part_contener div.price_div {
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+
+
+.right_part_contener div.price_div div.price_border {
+    border: 1px solid #d9d9d9;
+    line-height: 22px;
+    padding: 8px 0px;
+}
+
+
+.right_part_contener div.price_div div.price_border p.price {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.right_part_contener div.price_div div.price_border p, .right_part_contener div.price_div p {
+    text-align: center;
+}
+
+.center_part_contener div.info_sup_div {
+    overflow: hidden;
+    margin-bottom: 15px;
+    line-height: 18px;
+}
+
+.center_part_contener div.info_sup_div .info_sup {
+    margin-bottom: 0px;
+    color: #393939;
+    float: left;
+    width: auto;
+}
+
+.center_part_contener div.info_sup_div .info_sup img {
+    margin-right: 6px;
+    float: left;
+}
+
+.center_part_contener div.description {
+    /* min-height: 100px; */
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+#descri {
+    clear:left;
+    min-width: 700px;
+    min-height: 100px;
+	
+    max-width:700px;
+    max-height:300px;
+}
